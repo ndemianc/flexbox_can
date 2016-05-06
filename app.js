@@ -1,8 +1,15 @@
-import $ from 'jquery';
-import stache from 'can/view/stache/stache';
+var express = require('express');
+var app = express();
+var listenPort = 3003;
 
-const template = stache('Hello {{message}}!');
+// set the static files location /public/img will be /img for users
+app.use(express.static(__dirname + '/public'));
+app.set('views', './views');
+app.set('view engine', 'ejs');
 
-$(() => {
-  $('body').append(template({ message: 'Sergii' }));
+app.listen(listenPort);
+app.get('/', function(req, res) {
+  res.render('index');
 });
+
+console.log('Listen on the port', listenPort);
