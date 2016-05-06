@@ -17,10 +17,7 @@
   },
   "homepage": "https://github.com/ndemianc/flexbox_can#readme",
   "dependencies": {
-    "can": "^2.3.23",
     "ejs": "^2.4.1",
-    "express": "^4.13.4",
-    "jquery": "^2.2.3",
-    "steal": "^0.16.4"
+    "express": "^4.13.4"
   }
 }
