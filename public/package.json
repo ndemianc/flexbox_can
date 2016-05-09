@@ -11,6 +11,8 @@
   "dependencies": {
     "can": "^2.3.23",
     "jquery": "^2.2.3",
+    "lodash": "^4.11.2",
+    "material-design-lite": "^1.1.3",
     "steal": "^0.16.4"
   }
 }

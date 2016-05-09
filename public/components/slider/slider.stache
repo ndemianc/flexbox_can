@@ -1,0 +1,6 @@
+<!-- Slider with Starting Value -->
+<input class="mdl-slider mdl-js-slider" type="range" min="0" max="100" value={{value}} tabindex="0" />
+<!-- FAB button with ripple -->
+<button class="mdl-button mdl-js-button mdl-button--fab mdl-js-ripple-effect">
+  <i class="material-icons">add</i>
+</button>
