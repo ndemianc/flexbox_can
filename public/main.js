@@ -1,9 +1,8 @@
 import can from 'can';
 import $ from 'jquery';
 import stache from 'can/view/stache/stache';
+import template from './main.stache!';
 
-const template = stache('Hello {{message}}!');
+import 'components/slider/';
 
-$(() => {
-  $('body').append(template({ message: 'Sergii' }));
-});
+$('#content').html(template({name: 'Sergii'}));
